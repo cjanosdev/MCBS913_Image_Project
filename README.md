@@ -35,14 +35,42 @@
 
 # Packages directly installed to our environment
 As of 03/06/20225 we have the following installed to our environment:
-- python                    3.12
-- opencv                    4.10.0
-- huggingface (transformers) installed bia conda forge and includes the following dependencies
-  - huggingface_hub         0.24.6
-  - datasets                2.19.1
-  - safetensors             0.4.5
-  - transformers            4.49.0
-  - python_abi              3.12            
-  - tokenizers              0.21.0
-- pyimagej                  1.6.0
-- openjdk                  11.0.1
+
+| Package Name            | Version  | Date Added |
+|-------------------------|----------|------------|
+| pyton                   | 3.12     | 03/06/2025 |
+| opencv                  | 4.10.0   | 03/06/202  |
+| huggingface_hub         | 0.24.6   | 03/06/2025 |
+| datasets                | 2.19.1   | 03/06/202  |
+| safetensors             | 0.4.5    | 03/06/2025 |
+| transformers            | 4.49.0   | 03/06/202  |
+| pyton_abi               | 3.12     | 03/06/2025 |
+| tokenizers              | 0.21.0   | 03/06/202  |
+| pyimagej                | 1.6.0    | 03/06/202  |
+| openjdk                 | 11.0.1   | 03/06/202  |
+| lftp                    | 11.0.1   | 03/06/202  |
+
+
+# Downloading Data from ICR using LFTP
+1) In a terminal window login into Ron
+2) Once connected to Ron and in the `/home/share/groups/mcbs913-2025/image` directory. First activate our conda environment:
+   >> `conda activate image_proj_env`
+4) Once the Conda environment is active will connect to the IDR using LFTP (Command-Line FTP Client via Conda):
+   >> `lftp ftp.ebi.ac.uk`
+
+5) Navigate to the IDR databse directory:
+>> `[lftp ftp.ebi.ac.uk:~> cd /pub/databases/IDR/
+cd ok, cwd=/pub/databases/IDR   `
+
+4) Use the `ls` command to list all studies in the IDR:
+   > But we want idr0080-way-perturbation in particular so we will do:
+   >>   `[lftp ftp.ebi.ac.uk:/pub/databases/IDR> ls idr0080-*`
+  > This just filters down the list to studies that have "idr0080-" in the name.
+5) We can use the `get` command to download a specific file.
+> Note you can only use `get` for a single file. In order to download a whole directory (and its content) we need to do whats called a **recursive** download using the `mirror` command note I have `/path/to/local/directory` in the below command change this to `.` if you just want it to download to the current directory you are in or specify the desired path:
+>> `mirror -c idr0080-way-perturbation /path/to/local/directory`
+
+<img width="900" alt="Screenshot 2025-03-06 at 12 30 11 PM" src="https://github.com/user-attachments/assets/03bc3464-3680-4316-8899-47b30884b9dc" />
+
+
+6) When you are done dowloading a file type `bye`to close the connection to the IDR.
