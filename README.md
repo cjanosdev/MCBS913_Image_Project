@@ -29,7 +29,7 @@
 1) Once you are logged onto Ron **via terminal or PUTTY client** ***(you cannot do this with cyberduck)*** navigate to the following directory: `/home/share/groups/mcbs913-2025/image`
 - The command to navigate to a directory or file is `cd` so in the terminal if you type: `cd /home/share/groups/mcbs913-2025/image`this will bring you to the correct directory.
 
-2) Once in the image directory you can type the following command to activate the conda environment: `conda activate image_proj_env` I named our conda environment "image_proj_env" so this is what you are "activating".
+2) Once in the image directory you can type the following command to activate the conda environment: `conda activate ./image_proj_env/` I named our conda environment "image_proj_env" so this is what you are "activating".
 
 3) If you want to "exit" or "stop" using the conda environment simply type the following command: `conda deactivate`. It is considered good practice to deactivate a conda environment when you are done using it.
 
@@ -38,17 +38,17 @@ As of 03/06/20225 we have the following installed to our environment:
 
 | Package Name            | Version  | Date Added |
 |-------------------------|----------|------------|
-| pyton                   | 3.12     | 03/06/2025 |
-| opencv                  | 4.10.0   | 03/06/202  |
-| huggingface_hub         | 0.24.6   | 03/06/2025 |
-| datasets                | 2.19.1   | 03/06/202  |
-| safetensors             | 0.4.5    | 03/06/2025 |
-| transformers            | 4.49.0   | 03/06/202  |
-| pyton_abi               | 3.12     | 03/06/2025 |
-| tokenizers              | 0.21.0   | 03/06/202  |
-| pyimagej                | 1.6.0    | 03/06/202  |
-| openjdk                 | 11.0.1   | 03/06/202  |
-| lftp                    | 11.0.1   | 03/06/202  |
+| python                   | 3.12     | 03/06/2025 |
+| opencv                  | 4.10.0   | 03/06/2025  |
+| huggingface_hub         | 0.24.6   | 03/06/2025  |
+| datasets                | 2.19.1   | 03/06/2025  |
+| safetensors             | 0.4.5    | 03/06/2025  |
+| transformers            | 4.49.0   | 03/06/2025  |
+| pyton_abi               | 3.12     | 03/06/2025  |
+| tokenizers              | 0.21.0   | 03/06/2025  |
+| pyimagej                | 1.6.0    | 03/06/2025  |
+| openjdk                 | 11.0.1   | 03/06/2025  |
+| lftp                    | 11.0.1   | 03/06/2025  |
 
 
 # Downloading Data from IDR using LFTP
