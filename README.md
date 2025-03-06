@@ -16,7 +16,7 @@
 7) Click the connect button.
 <img width="492" alt="Screenshot 2025-03-06 at 11 18 59 AM" src="https://github.com/user-attachments/assets/2265f794-348a-4bb6-9818-4f7e0a214f4b" />
 
-## How to Downlaod or Upload files using CyberDuck
+## How to Download or Upload files using CyberDuck
 1) Once you are connected to Ron in CyberDuck you will see that you are at your `/home/users/whateveryourusernameis` path location.
 2) You will likely be wanting to upload or download files to our shared folder location which is `/home/share/groups/mcbs913-2025/image`. Use the drop down to navigate to this directory.
 3) Once in the image directory you can choose to upload data, images, files, etc. by simply dragging and dropping them into the desired folder in CyberDuck. You will see a small pop-up that indicates the file is being uploaded to Ron using CyberDuck.
@@ -51,7 +51,7 @@ As of 03/06/20225 we have the following installed to our environment:
 | lftp                    | 11.0.1   | 03/06/202  |
 
 
-# Downloading Data from ICR using LFTP
+# Downloading Data from IDR using LFTP
 1) In a terminal window login into Ron
 2) Once connected to Ron and in the `/home/share/groups/mcbs913-2025/image` directory. First activate our conda environment:
    >> `conda activate image_proj_env`
