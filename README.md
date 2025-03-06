@@ -43,4 +43,6 @@ As of 03/06/20225 we have the following installed to our environment:
   - safetensors             0.4.5
   - transformers            4.49.0
   - python_abi              3.12            
-  - tokenizers              0.21.0 
+  - tokenizers              0.21.0
+- pyimagej                  1.6.0
+- openjdk                  11.0.1
