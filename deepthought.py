@@ -8,6 +8,10 @@ import logging
 from datetime import datetime
 from PIL import Image
 from typing import Callable, Dict, Iterator, List, Union, Tuple
+import urllib3
+
+# Suppress SSL warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 API_URL = "https://dtcontroller.sr.unh.edu:4242/api"
@@ -44,22 +48,6 @@ def _inference_gen(auth: str, model: str, temperature: float, conversation: List
             #logger.info(f"reponse is {response}\n")
             if response.status_code != 200:
                 raise Exception(f"Status Code {response.status_code}")
-            # logger.info(f"test1")
-            # logger.info(f"Response content (raw): {response.content[:200]}...")  # First 200 bytes of raw response
-
-            # logger.info(f"Response Text: {response.text[:200]}...")  # Print the first 200 characters of the response body to check if there's any content.
-           # logger.info(f"test2")
-
-            # logger.info(f"Response Object: {response}\n")
-            # logger.info(f"Status Code: {response.status_code}\n")
-            # logger.info(f"Headers: {response.headers}\n")
-
-            # logger.info(f"Raw Content: {response.content[:500]}...\n")  # First 500 bytes
-            # logger.info(f"Text Content: {response.text[:500]}...\n")  # First 500 characters
-
-
-            # for line in response.iter_lines():
-            #     logger.info(f"Streamed Line: {line}\n")
 
             buffer = ""
             for chunk in response.iter_content(chunk_size=256):
@@ -67,7 +55,7 @@ def _inference_gen(auth: str, model: str, temperature: float, conversation: List
                 buffer += chunk.decode("utf-8")
                # logger.info(f"\nbuffer")
                 try:
-                    #logger.info(f"Buffer so far: {buffer}")
+                   # logger.info(f"Buffer so far: {buffer}")
                     recv_data = json.loads(buffer)
                     buffer = ""
 
