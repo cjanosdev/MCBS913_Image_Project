@@ -1,0 +1,609 @@
+
+
+[
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "There are a plethora of components of a cell, but in particular, we are interested in the cell membranes.\u00a0"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Cell membranes have the ability to separate the inside of an organelle to the outside of an organelle.\u00a0"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "An organelle is a subcellular structure that has one or more specific jobs to perform in the cell. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The types of organelles that are in a cell are the nucleus, mitrochondria, endoplasmic reticulum, golgi apparatus, lysosomes, ribosomes, vauoles, cytoskeleton, cell membrane. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The cytoplasm is the gelatinous liquid that fills the inside of a cell. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The mitochondria are membrane-bound organelles that generate energy needed to power the cell's biological reactions, storing it as ATP. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Mitochondria look like small, oval, or rod-shaped structures with a double membrane, an inner membrane with folds called cristae, and a fluid-filled space called the matrix."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The function of the mitochondria is to generate energy needed to power the cell's biological reactions. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "DNA is a molecule that contains the genetic code for building and maintaining an organism. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Ribosome is a complex, molecular machine. Protein factories. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "In a cell ribosomes look like a composition of ribonucleic acid (RNA) and proteins, and consist of two subunits."
+        }
+        ]
+    },
+
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The function of the ribosome is to bind to mRNA molecules and read the genetic code carried within. They facilitate the process of translation, where amino acids, carried by transfer RNA (tRNA), are linked together in the order specificed by the mRNA. Results in the formation of polypeptide chains. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "A prokaryotic cell is a single-celled organism whose cell lacks a nucleus and other organelles"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "A eukaryotic cell is a cell type characterized by having a membrane-bound nucleus and other membrane-bound organelles, which are specialized cellular compartments that carry out specific functions"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Prokaryotic cells are simpler, smaller, and lack a nucleus and membrane-bound organelles, while eukaryotic cells are more complex, larger, and possess a nucleus and membrane-bound organelles"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The nucleus is the structure in a cell that contains the chromosomes"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "In a cell the nucleus appears as a distinct, membrane-bound organelle, typically spherical or oval, containing the cell's genetic material (DNA) and a prominent nucleolus, a darker region involved in ribosome synthesis"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "A lysosome is a membrane-bound cell organelle that contains digestive enzymes"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Lysosomes are cellular organelles that act as the cell's \"recycling center\" and \"garbage disposal,\" breaking down waste materials, cellular debris, and foreign substances using hydrolytic enzymes"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Lysosomes are small, spherical, membrane-bound organelles found in animal cells that contain digestive enzymes, appearing as dense, spherical vacuoles or vesicles"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The endoplasmic reticulum (ER) is a network of membrane-enclosed tubules and sacs within a cell's cytoplasm"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The endoplasmic reticulum (ER) appears as a network of interconnected membranes, forming flattened sacs (cisternae) and tubules, extending throughout the cytoplasm, and can be either rough (with ribosomes) or smooth (without ribosomes)"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The endoplasmic reticulum (ER), a network of membranes within cells, plays a crucial role in protein synthesis, folding, modification, and transport, as well as lipid and carbohydrate metabolism, and calcium storage"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The Golgi apparatus, also known as the Golgi complex or Golgi body, is a cell organelle found in eukaryotic cells that processes and packages proteins and lipids, often likened to a cell's \"post office\" or distribution center"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The golgi appartus looks like a series of flattened, stacked, membrane-enclosed sacs called cisternae, often described as looking like a stack of pancakes or flattened discs, and is located near the endoplasmic reticulum and nucleus"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The function of the golgi apparatus is to process and package proteins and lipids, especially those destined for secretion or delivery to other cellular location"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Cell morphology is the term used to desribe the description of the shape of a cell."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Cells can have numerous shapes: Cocci, Bacilli, Vibrio, Spirillia, Spirochete, Rod, Oval, Spherical, Filamentous, Puncta"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "A typical animal cell is roughly 10-20 micrometers (\u00b5m) in diameter, while prokaryotic cells (like bacteria) are smaller, around 0.1 to 5.0 \u00b5m"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The surface features of a cell are plasma membrane which acts as a barrier and interface with the external environment. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "A damaged cell can feature reversible and irreversible injuries."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The features of a reversible damaged cell include cell swelling, fatty change, blebbing, distortion of microvilli, loosening of intercellular attachments, mitochondrial changes, dilation of the endoplasmic reticulum. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The features of an irreversible damaged cell are: rupture of the plasma membrane, organelle damage, DNA damage, autolysis, necrosis, apoptosis"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The nuclear envelope is composed of two lipid bilayers, the inner and outer nuclear membranes, with a space between them called the perinuclear space"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The nuclear envelope appears as two concentric lipid bilayer membranes separated by an intermembrane space of about 20-40 nm. The outer membrane is continuous in many places with the rough endoplasmic reticulum. Like the rough ER the outer membrane of the nuclear envelope is dotted with ribosomes"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Fluorescent microscopy is a technique that uses a microscope to irradiate a specimen with a specific wavelength of light (excitation light), and then detects the emitted fluorescent light (emission light) after it has been re-emitted by fluorophores in the sample"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Fluorescent microscopy can help analyze an image by enabling the visualization of specific cellular structures and processes through the use of fluorophores (dyes that emit light when excited), allowing for detailed observation and quantification of biological phenomena"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "During apoptosis cells show a reduced fluorescence compared to healthy cells."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Fluorescent images can use a variety of dyes or fluorophores such as organic dyes, biological fluorophores, and quantum dots."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Examples of organic dyes include: cyanines, rhodamines,  fluoresceins, BODIPY dyes, and coumarin dyes."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The most commonly used dyes for immunofluorescence labeling are fluoroscein isothiocyanate (FITC), phycoerythrin (PE) and AlexaFluor series dyes."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Examples of biological fluorophores used are: fluorescein isothiocyanate (FITC), cyanine dyes, DAPI, Alexa Fluor"
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "GFP are green fluorescent proteins serve as fluorescent protein labels."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Applications to fluorescent dyes are fluorescence microscopy, flow cytometry, immunofluorescence, biochemical assays, cell viability assays."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "On a microscope image a green color indicates fluoroscein that is often used to stain microtubules or actin filaments."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "On a microscope image a red color indicates rhodamine that is often used to stain mitochondria or lysosomes."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "On a microscope image a blue color indicates the DAPI or Hoechst fluorophore and binds to DNA."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "A cell, under cell death, can exhibit shrinkage, blebbing (membrane protrusions), chromatin condensation, and nuclear fragmentation. Leads to the formation of apoptotic bodies."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Stages of apoptosis include cell shrinkage, nuclear fragmentation, formation of apoptotic bodies, and phagocytosis."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Apoptosis is the main type of cell death."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Necrosis is another type of cell death which is uncontrolled cell death."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The morphological changes that are present in apoptosis include cell blebbing, loss of adhesion and cellular volume, chromatin condensation and nuclear fragmentation, cytoskeletal rearrangement, phosphatidylserine inversion, release of mitochondrial proteins, and caspase cleavage."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": ""
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Morphology changes present during vial invasion can include cell rounding, fusion to form syncytia, and the appearanc eof inclusion bodies. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The first membrane affected during apoptosis is the mitochondrial outer membrane."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The cell flouresces its particluar color per organelle due to the use of fluorescent dyes that target and accumulate in specific dyes."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Filamentous networds can occur in cytoskeleton, cell cortex, nuclear lamina, in vascular systems and neurons. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Viruses and bacteria invade cells by fusig either with the plasma membrane or with the endosomal membrane following endocytosis. They can also utilize specialized proteins to facilitate entry. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Cells undergo cell division for growth, tissue repair, and replacement of old or damaged cells. Cell death is related to this as it removes cells that are no longer needed or are damaged, ensuring proper tissue function and preventing potential problems like cancer. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Blebbing, in cell death, is described as an irregular bulge in the plama membrane of a cell. They are balloon-like, sperical protrusions of the plasma membrane. They can eventually detach and take part of the cytoplasm wiith them ."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Membrane blebbing is the formation of irregular bulges in the plasma membrane."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Apoptotic bodies are non-uniform subcellular fragmetns related from apoptotic cells trapping cellular contents such as DNA, gragments of nucleus, and gragmented or intact organelles, the formation of which requiress plama membrane blebbing."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Apoptotic cells reorganize their cytoskeletons with fragmentation of the microfilament bundles. This will confer plasticity to the whole cell and promotes volume decrase as well as cell shrinkage. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "The endoplasmic reticulum has a structure made by tubules dynamically moving and fusing with each other. It will become enlarged and swollen in apoptotic cells. Dense vacuoles can also occur. "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "During apoptosis the mitrochondria becomes fragmented, forming aggregates and more packed masses in the cytoplasm. They can be seen as smaller, swollen, and vacuolated. Permeabilization of mitochondrial membranes would be a decisive step in apoptosis "
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "During apoptosis the lysosomes enzumatic content, such as proteases, play a crucial degradative function. Key activation step for lysosome function is represented by the destabilization of lysosomal membranes to allow the release of lysosomal content into the cytosol."
+        }
+        ]
+    },
+    {
+        "role": "system",
+        "content": [
+        {
+            "type": "text",
+            "text": "Cytoplasmic organelles undertake largely stereotypic relocation and/or degradation during apoptosis. "
+        }
+        ]
+    }
+
+    ]

@@ -61,10 +61,18 @@ def log_interaction(role, content):
 
 # -------- DeepThought Call --------
 
+def static_rag(prompt_convo: dict):
+    # send prompt info
+    response = get_inference(auth=AUTH_KEY, model=MODEL_LLAMA_VIS, conversation=prompt_convo, streaming=False)
+
+    # add response to convo
+    conversation.append({"role": "assistant", "content": [{"type": "text", "text": response}]})
+
 def test_talk_to_deepthought(user_convo: dict):
     logging.info("Starting conversation...")
     try:
         conversation.append(user_convo)
+        print(f"\n\nPrinting the conversation now: {conversation}\n\n")
         log_interaction(user_convo["role"], user_convo["content"])
 
         response = get_inference(auth=AUTH_KEY, model=MODEL_LLAMA_VIS, conversation=conversation, streaming=False)
@@ -233,17 +241,18 @@ def main():
 
         if choice == "1":
             history_log = []
-            conversation = select_prompt_file()
+            prompt_convo = select_prompt_file()
 
             # Show loading message
             print("\n🔄 Loading conversation from prompt... please wait.\n")
-            progress_bar = tqdm(total=len(conversation), desc="Processing conversation", ncols=100)
+            progress_bar = tqdm(total=len(prompt_convo), desc="Processing conversation", ncols=100)
 
              # Temporary list to hold messages to print all at once
             display_log = []
 
             # 🔁 Auto-run preloaded conversation
-            for msg in conversation[:]:  # Copy list
+            for msg in prompt_convo[:]:  # Copy list
+
                 if msg["role"] == "assistant":
                     # Log preloaded assistant message
                     log_interaction("assistant", msg["content"])
@@ -257,10 +266,10 @@ def main():
                     if any(item["type"] == "image" for item in msg["content"]):
                         display_log.append("📸 [Image input provided]")
 
-                    # Send to DeepThought
-                    response = test_talk_to_deepthought(msg)
-                    formatted = format_response(response)
-                    display_log.append(f"\n🤖 Assistant (DeepThought):\n{formatted}")
+                # Send to DeepThought
+                response = static_rag(msg)
+                formatted = format_response(response)
+                display_log.append(f"\n🤖 System (DeepThought):\n{formatted}")
                 
                 # Update the progress bar for each message processed
                 progress_bar.update(1)
@@ -286,6 +295,8 @@ def main():
                     convo = build_conversation_no_image(user_input_text=user_text)
 
                 print("\n🧠 Sending message to DeepThought... ⏳\n")
+                print(f"\nPrinting the convo test...:\n")
+                print(f"\n{convo}\n")
                 response = test_talk_to_deepthought(convo)
                 formatted_response = format_response(response)
                 print(formatted_response)
