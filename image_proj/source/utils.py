@@ -2,6 +2,10 @@ import os
 import json
 from datetime import datetime
 from PIL import Image
+import pandas as pd
+import matplotlib.pyplot as plt
+import csv
+import re
 
 class Utils:
 
@@ -215,3 +219,72 @@ class Utils:
                 elif item["type"] == "image":
                     text += "[Image content omitted]\n"
             print(f"--- {role} ---\n{text}")
+
+    def get_correct_answer(self, query: str, image_path: str) -> str:
+        base_dir = Utils.get_file_path_of_parent()
+        file_name = os.path.join(base_dir, "source/database/ground_truth.json")
+        with open(file_name) as f:
+            data = json.load(f)
+        for item in data:
+            if item["query"] == query and os.path.basename(image_path) == item["image_name"]:
+                return item["expected_answer"]
+        return "No ground truth found."
+
+    def log_experiment_result(self, output_path, query, image_name, llm_answer, correct_answer, score, explanation):
+        file_exists = os.path.isfile(output_path)
+        with open(output_path, mode='a', newline='') as file:
+            writer = csv.writer(file)
+            if not file_exists:
+                writer.writerow(["Timestamp", "Query", "Image", "LLM Answer", "Correct Answer", "Score", "Explanation"])
+            writer.writerow([
+                datetime.now().isoformat(),
+                query,
+                image_name,
+                llm_answer,
+                correct_answer,
+                score,
+                explanation
+            ])
+    def save_experiment_batch(self, output_path: str, results: list):
+
+        if not results:
+            print("No results to write.")
+            return
+
+        with open(output_path, mode='w', newline='') as file:
+            writer = csv.DictWriter(file, fieldnames=results[0].keys())
+            writer.writeheader()
+            writer.writerows(results)
+
+        print(f"✅ Batch CSV saved to: {output_path}")
+
+    def extract_score_from_evaluation(self, response: str) -> int:
+        # Match variations like "3/5", "3 out of 5", "3 / 5", etc.
+        match = re.search(r"\b([1-5])\s*(?:/|out of)\s*5\b", response, re.IGNORECASE)
+        return int(match.group(1)) if match else -1
+
+    def plot_experiment_scores(self, csv_path="logs/experiment_results.csv"):
+        df = pd.read_csv(csv_path)
+
+         # ✅ Convert score column to numeric explicitly
+        df["Score"] = pd.to_numeric(df["Score"], errors="coerce")
+        # ✅ Prepare output path for PNG
+        png_path = os.path.splitext(csv_path)[0] + ".png"
+
+        # Optional: Shorten long questions for cleaner axis labels
+        df["ShortQuery"] = df["Query"].apply(lambda q: q if len(q) < 60 else q[:57] + "...")
+
+
+        # Plot as bar chart
+        plt.figure(figsize=(12, 6))
+        plt.bar(df["ShortQuery"], df["Score"], color='skyblue')
+        plt.title("LLM Correctness Score by Question")
+        plt.xlabel("Question")
+        plt.ylabel("Score (out of 5)")
+        plt.ylim(0, 5.5)
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+
+         # ✅ Save plot to same directory as CSV
+        plt.savefig(png_path)
+        print(f"📁 Plot saved to: {png_path}")

@@ -28,15 +28,37 @@ class ImagePreProcessor:
     def thresholding(self, image):
         _, thresh = cv2.threshold(image, 60, 255, cv2.THRESH_BINARY_INV)
         return thresh
+    
+    # def segmentation(self, original_img, binary_img):
+    #     output_img = original_img.copy()
+    #     contours, _ = cv2.findContours(binary_img.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        
+    #     for contour in contours:
+    #         if cv2.contourArea(contour) > 25:  # filter out small noise
+    #             # Draw the actual contour shape on the output image
+    #             cv2.drawContours(output_img, [contour], -1, (0, 255, 0), 2)
+        
+    #     return output_img
 
     def segmentation(self, original_img, binary_img):
         output_img = original_img.copy()
-        contours, _ = cv2.findContours(binary_img.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        contours, _ = cv2.findContours(binary_img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
         for contour in contours:
-            ((x, y), radius) = cv2.minEnclosingCircle(contour)
-            if radius > 5:
-                cv2.circle(output_img, (int(x), int(y)), int(radius), (0, 255, 0), 2)
+            if cv2.contourArea(contour) > 100:  # filter tiny blobs
+                cv2.drawContours(output_img, [contour], -1, (0, 255, 0), 2)  # green outline
         return output_img
+
+    # def segmentation(self, original_img, binary_img):
+    #     output_img = original_img.copy()
+    #     contours, _ = cv2.findContours(binary_img.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    #     for contour in contours:
+    #         # remove the minEnclosing circle
+    #         # instead draw these directly and overlay them on the original image
+    #         ((x, y), radius) = cv2.minEnclosingCircle(contour)
+    #         if radius > 5:
+    #             cv2.circle(output_img, (int(x), int(y)), int(radius), (0, 255, 0), 2)
+    #     return output_img
 
     def apply_blurring_only(self, image_path:str):
         """Loads an image, applies Gaussian blur, and saves output"""
@@ -130,9 +152,9 @@ class ImagePreProcessor:
             return None
 
         blurred = self.blurring(image)
-        canny = self.canny_edge_detecting(blurred)
-        #thresh = self.thresholding(blurred)
-        segmented = self.segmentation(image, canny)
+        #canny = self.canny_edge_detecting(blurred)
+        thresh = self.thresholding(blurred)
+        segmented = self.segmentation(image, thresh)
 
         path_to_output = os.path.join(self.output_path, os.path.basename(image_path))
         cv2.imwrite(path_to_output, segmented)
