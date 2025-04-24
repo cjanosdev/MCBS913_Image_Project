@@ -35,7 +35,7 @@ class DTJSONEncoder(json.JSONEncoder):
 
 def _inference_gen(auth: str, model: str, temperature: float, conversation: List[Dict[str, str]], streaming: bool, user: str=getpass.getuser()) -> Iterator[str]:
     """ Internal: Get inference result generator from server """
-    logger.info(f"Sending inference request to model: {model}")
+    #logger.info(f"Sending inference request to model: {model}")
     send_data = { "auth": auth, "action": "inference_streaming" if streaming else "inference", "model": model, "user": user, "temperature": temperature, "conversation": conversation }
     recv_data = {}
 
@@ -82,7 +82,7 @@ def _inference_gen(auth: str, model: str, temperature: float, conversation: List
 
 def _get_recv_data(auth: str, send_data: dict) -> dict:
     """ Internal: Prepare and send request """
-    logger.info(f"Preparing data for action: {send_data['action']}")
+    #logger.info(f"Preparing data for action: {send_data['action']}")
     recv_data = {}
 
     try:
@@ -112,14 +112,14 @@ def _get_recv_data(auth: str, send_data: dict) -> dict:
 
 def get_inference(auth: str, model: str, conversation: List[Dict[str, str]], streaming: Union[bool, Callable], temperature: float=0.3, user: str=getpass.getuser()) -> Union[str, Iterator[str]]:
     """ API: Retrieve inference given conversation from server """
-    logger.info("Getting inference...")
+    #logger.info("Getting inference...")
 
     if streaming is None or streaming == False:
-        logger.info("Non-streaming mode selected.")
+        #logger.info("Non-streaming mode selected.")
         return next(_inference_gen(auth, model, temperature, conversation, False, user))
 
     if streaming == True:
-        logger.info("Streaming mode selected.")
+        #logger.info("Streaming mode selected.")
         return _inference_gen(auth, model, temperature, conversation, True, user)
 
     response = ""
@@ -133,7 +133,7 @@ def get_inference(auth: str, model: str, conversation: List[Dict[str, str]], str
 
 def get_embedding(auth: str, model: str, texts: List[str], weights: List[float]=None, user: str=getpass.getuser()) -> List[float]:
     """ API: Get weighted aggregated embedding vector for the given text(s) from server """
-    logger.info(f"Getting embedding for model: {model}")
+    #logger.info(f"Getting embedding for model: {model}")
 
     if weights is None:
         weights = [ 1 ] * len(texts)
