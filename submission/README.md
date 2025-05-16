@@ -22,7 +22,7 @@
 
 2) This starts the application and will give you a menu of options to choose from:
 Running the Cell Morphology Analyzer...
-
+```
     🔷 DeepThought Terminal Interface
     1. 💬 Start new conversation
     2. 📖 View past conversation
@@ -32,14 +32,15 @@ Running the Cell Morphology Analyzer...
     6. Run Automated Evaluation
     7. ❌ Quit
     Choose an option [1/2/3/4/5/6/7]: 
+```
 
-Option 1 starts an out-of-the-box conversation with DeepThought LLM.
-Option 2 allows you to view past conversations (if there are any available)
-Option 3 starts a new conversation with DeepThought LLM with the addition of a static RAG component.
-Option 4 starts a new conversation with DeepThought LLM with the addition of a dyanmic RAG component.
-Option 5 allows you to export the last conversation (if there are any available)
-Option 6 will run the 5 baseline question evaluation with our 4 preselected flourescent microscopy images. It will run with what we have determined to be the best combination of image preprocessing parameters after doing numerous runs and comparing the results.
-Option 7 simply quits the command line application.
+- Option 1 starts an out-of-the-box conversation with DeepThought LLM.
+- Option 2 allows you to view past conversations (if there are any available)
+- Option 3 starts a new conversation with DeepThought LLM with the addition of a static RAG component.
+- Option 4 starts a new conversation with DeepThought LLM with the addition of a dyanmic RAG component.
+- Option 5 allows you to export the last conversation (if there are any available)
+- Option 6 will run the 5 baseline question evaluation with our 4 preselected flourescent microscopy images. It will run with what we have determined to be the best combination of image preprocessing parameters after doing numerous runs and comparing the results.
+- Option 7 simply quits the command line application.
 
 
 
@@ -49,13 +50,16 @@ Option 7 simply quits the command line application.
 
 1) In `/home/share/groups/mcbs913-2025/image/submission/code/image_proj/source/cell_morphology_analyzer.py` find the function called: `run_parameter_sweep` this is the funciton called for Option 6 from the main menu. In there you will find the following:
 
-        `prompt_modes = ["dynamic_rag", "control"]`
-        `preprocessing_methods = ["default", "none"]`
-        `top_n_facts_options = [6]`
+```python 
+         prompt_modes = ["dynamic_rag", "control"]
+         preprocessing_methods = ["default", "none"]
+         top_n_facts_options = [6]
+```
 
 You can change these althought I would recommend leaving prompt_modes and preprocessing_methods untouched. If you want to see what happens by changing the number of facts to pull for the cosine similiarity search then you can tweak the 'top_n_facts_options' to the desired value.
 
 The parameter sweep configuration in its final form is currently:
+```python  
 preprocessing_param_sweep = {
             "gaussian_blur": {
                 "ksize": (5, 5),
@@ -90,12 +94,13 @@ preprocessing_param_sweep = {
                 "gamma": 0.0,
             }
         }
-
+```
 
 You can tweak individual values to your liking.
 
 
 When run you Option 6 you will get output that looks something like:
+```
 ✅ Pipeline Completed.
 📋 Summary of Scores:
  
@@ -189,6 +194,6 @@ No Preprocessing:
    🧪 Default Accuracy: 65.0%
    🧪 None Accuracy:    62.0%
    ✅ DEFAULT outperformed NONE by 3.0 percentage points
-
+```
 
 This goes through each baseline question and compares dynamic rag to the control along with default preprocessing against no-preprocessing.
