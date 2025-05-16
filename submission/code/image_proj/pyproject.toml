@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "morphology-ai"
+version = "0.1.0"
+description = "Using RAG to accurately identify and analyze cell morphology"
+authors = ["Catrina Janos cjanosdev@protonmail.com"]
+license = "MIT"
+readme = "README.md"
+
+# Specify the packages in your source directory
+packages = [
+    { include = "source", from = "." }  # Include the source directory
+]
+
+[tool.poetry.scripts]
+# Define the script entry point
+cell_morphology_analyzer = "source.cell_morphology_analyzer:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26"
+numpy = "^1.21"
+pillow = "^8.4"
+tqdm = "^4.62"
+pytest = "^6.2"
+pytest-mock = "^3.6"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+isort = "^5.9"
+
