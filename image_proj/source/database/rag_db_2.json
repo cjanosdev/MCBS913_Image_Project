@@ -1,0 +1,163 @@
+[
+    {
+      "fact": "DAPI fluoresces blue and binds strongly to DNA, making it a nuclear stain in fluorescence microscopy.",
+      "tags": ["dye", "nucleus"]
+    },
+    {
+      "fact": "GFP fluoresces green and is often used to label lysosomes or other cytoplasmic proteins.",
+      "tags": ["dye", "lysosome"]
+    },
+    {
+      "fact": "Rhodamine fluoresces red and is commonly used to stain mitochondria or lysosomes due to pH sensitivity.",
+      "tags": ["dye", "mitochondria", "lysosome"]
+    },
+    {
+      "fact": "Healthy cells have uniform fluorescence, intact nuclei, and extended filamentous mitochondria.",
+      "tags": ["health", "morphology"]
+    },
+    {
+      "fact": "Apoptotic cells often show punctate fluorescence, fragmented nuclei, and reduced dye signal from photobleaching.",
+      "tags": ["apoptosis", "morphology", "photobleaching"]
+    },
+    {
+      "fact": "Photobleaching appears as a loss of fluorescence intensity and may indicate damage or cell death.",
+      "tags": ["photobleaching"]
+    },
+    {
+      "fact": "Lysosomes under fluorescence appear as small, bright green puncta when labeled with GFP or Alexa488.",
+      "tags": ["lysosome", "puncta"]
+    },
+    {
+      "fact": "A cell undergoing apoptosis often displays condensed chromatin and membrane blebbing.",
+      "tags": ["apoptosis", "nucleus"]
+    },
+    {
+      "fact": "Morphological changes like blebbing, puncta, or nuclear fragmentation signal apoptotic processes.",
+      "tags": ["apoptosis", "morphology"]
+    },
+    {
+      "fact": "Puncta indicate organelle clustering or protein aggregation, often seen in stressed or dying cells.",
+      "tags": ["puncta", "apoptosis"]
+    },
+    {
+      "fact": "Filamentous structures usually indicate healthy mitochondria or cytoskeletal elements.",
+      "tags": ["filamentous", "morphology"]
+    },
+    {
+      "fact": "If most cells display puncta rather than filamentous structure, widespread apoptosis may be occurring.",
+      "tags": ["apoptosis", "morphology"]
+    },
+    {
+      "fact": "You can estimate the number of dying cells by identifying those with fragmented or condensed nuclei.",
+      "tags": ["apoptosis", "count"]
+    },
+    {
+      "fact": "Viral infection can cause cytoplasmic swelling, lysosomal rupture, and mitochondrial fragmentation.",
+      "tags": ["virus", "morphology"]
+    },
+    {
+      "fact": "Viruses enter cells and disrupt organelle function, especially affecting the ER, lysosomes, and mitochondria.",
+      "tags": ["virus", "organelles"]
+    },
+    {
+      "fact": "Heavily punctate green staining co-localized with blue nuclear damage often indicates late-stage apoptosis or viral invasion.",
+      "tags": ["virus", "apoptosis", "lysosome"]
+    },
+    {
+      "fact": "During apoptosis, lysosomes may release enzymes into the cytoplasm, leading to degradation of cellular components.",
+      "tags": ["apoptosis", "lysosome"]
+    },
+    {
+      "fact": "Apoptotic bodies form when dying cells fragment into membrane-bound vesicles containing organelles or chromatin.",
+      "tags": ["apoptosis", "fragmentation"]
+    },
+    {
+      "fact": "Hoechst and DAPI are blue dyes that both bind DNA and highlight nuclear morphology.",
+      "tags": ["dye", "nucleus"]
+    },
+    {
+      "fact": "Alexa Fluor 488 is a green dye that can target lysosomal proteins and produce punctate fluorescence.",
+      "tags": ["dye", "lysosome"]
+    },
+    {
+      "fact": "Loss of structural continuity in the nucleus under fluorescence is a hallmark of apoptotic nuclear fragmentation.",
+      "tags": ["nucleus", "apoptosis"]
+    },
+    {
+      "fact": "Viral invasion may trigger lysosomal destabilization, visible as an increase in green puncta and nuclear damage.",
+      "tags": ["virus", "lysosome", "nucleus"]
+    },
+    {
+      "fact": "In advanced apoptosis, the nucleus becomes irregular or fragmented and surrounded by clustered lysosomes.",
+      "tags": ["apoptosis", "nucleus", "lysosome"]
+    },
+    {
+      "fact": "If four or more cells show blebbing or nuclear fragmentation in a fluorescent image, widespread cell death is likely.",
+      "tags": ["apoptosis", "quantification"]
+    },
+    {
+      "fact": "Merged fluorescent images often show nuclei (blue), lysosomes (green), and mitochondria (red) to differentiate compartments.",
+      "tags": ["dye", "merged"]
+    },
+    {
+      "fact": "Blue-stained, round nuclei with minimal green puncta suggest healthy, non-apoptotic cells.",
+      "tags": ["health", "nucleus"]
+    },
+    {
+      "fact": "Disorganized green puncta with irregular blue nuclear shapes suggest apoptotic or infected cells.",
+      "tags": ["apoptosis", "virus"]
+    },
+    {
+      "fact": "Apoptotic cells shrink and may appear isolated with brighter, punctate staining.",
+      "tags": ["apoptosis", "puncta"]
+    },
+    {
+      "fact": "Virus-induced apoptosis can alter the morphology of the nucleus and cause lysosomal clustering.",
+      "tags": ["virus", "apoptosis"]
+    },
+    {
+      "fact": "Healthy cells typically have smooth, oval nuclei and diffuse green fluorescence.",
+      "tags": ["health", "morphology"]
+    },
+    {
+      "fact": "In healthy cells, the nucleus is typically round or oval in shape and centrally located within the cytoplasm.",
+      "tags": ["health", "nucleus", "morphology"]
+  },
+  {
+      "fact": "The nucleus of healthy cells should show a distinct, clear boundary with a uniform blue fluorescence when stained with DAPI or other nuclear stains.",
+      "tags": ["health", "nucleus", "fluorescence"]
+  },
+  {
+      "fact": "Healthy cells exhibit a single, intact nucleus. An increase in the number of nuclei or fragmented nuclei often indicates cellular stress or damage.",
+      "tags": ["health", "nucleus", "stress", "damage"]
+  },
+  {
+      "fact": "In healthy cells, mitochondria are distributed throughout the cytoplasm, forming a network that can appear punctate or tubular under fluorescence microscopy.",
+      "tags": ["health", "mitochondria", "morphology"]
+  },
+  {
+      "fact": "Healthy mitochondrial staining using Mitotracker Red or similar dyes shows distinct, vibrant red fluorescence, indicating normal mitochondrial function.",
+      "tags": ["health", "mitochondria", "fluorescence", "function"]
+  },
+  {
+      "fact": "Healthy cells typically maintain a normal, consistent size and shape, with no excessive swelling or shrinkage.",
+      "tags": ["health", "cell_size", "morphology"]
+  },
+  {
+      "fact": "A healthy cell will have a clear cytoplasm with visible organelles, such as mitochondria and the nucleus. The cytoplasm will not show signs of abnormal vacuolization or excessive stress responses.",
+      "tags": ["health", "cytoplasm", "organelles", "morphology"]
+  },
+  {
+      "fact": "In healthy cells, the nucleus appears oval or round and is centrally located in the cell.",
+      "tags": ["health", "nucleus", "morphology"]
+  },
+  {
+      "fact": "A bright, uniform blue fluorescence pattern in the nucleus indicates healthy cells.",
+      "tags": ["health", "nucleus", "fluorescence"]
+  },
+  {
+      "fact": "In microscopy, healthy cells may exhibit a smooth or slightly ruffled surface without large irregularities or blebs.",
+      "tags": ["health", "cell_surface", "morphology"]
+  }
+  ]
+  

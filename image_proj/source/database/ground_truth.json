@@ -1,28 +1,108 @@
 [
-    {
-      "query": "What are the fluorescent dyes being used in this image if any? Please specify which organelles are being stained and why?",
-      "image_name": "NucleusLysosomeStain.png",
-      "expected_answer": "The images being analyzed are fluorescent microscopy images using an array of DAPI, GFP, and rhodamine stains. The organelles in which each dye is used varies however usually, the DAPI stains the nucleus, GFP stains the mitochondria, ER, golgi, and/or lysosomes, and Rhodamine mainly looks at the mitochondria."
-    },
-    {
-      "query": "Do the cells in these images seem healthy? If not, what is the process they could undergo and how would you know?",
-      "image_name": "NucleusLysosomeStain.png",
-      "expected_answer": "The cells in these images are not healthy and are beginning the formation of mitosis leading to apoptosis."
-    },
-    {
-      "query": "Do you notice any morphological changes present in these images? If so what types and to what ratio are you able to compare puncta to filamentous networks?",
-      "image_name": "NucleusLysosomeStain.png",
-      "expected_answer": "The morphology changes that are to be present in these images will vary but there should be some puncta, or small spots, filamentous networks, large puncta, and fragmentation present. The ratio can be analyzed by how many cells it is able to detect and then form a ratio from here."
-    },
-    {
-      "query": "These images have two pathways, one showing the basics of staining to certain organelles while others show invasion. What is being invaded into these cells? Which organelles are these morphology changes occurring in these images?",
-      "image_name": "NucleusLysosomeStain.png",
-      "expected_answer": "Virus/bacteria is being invaded into these cells. Morphology changes should be occurring in all organelles, in particular the lysosome in this image."
-    },
-    {
-      "query": "How many of the cells in these images are undergoing cell death? Give me a number.",
-      "image_name": "NucleusLysosomeStain.png",
-      "expected_answer": "5"
-    }
-  ]
-  
+  {
+    "query": "What are the fluorescent dyes being used in this image if any? Please specify which organelles are being stained and why?",
+    "image_name": "NucleusLysosomeStain.png",
+    "expected_answer": "Generic DAPI, GFP, and rhodamine dyes. The specific organelles are hard to decipher here due to the advancement of apoptosis occurring here."
+  },
+  {
+    "query": "Do the cells in these images seem healthy? If not, what is the process they could undergo and how would you know?",
+    "image_name": "NucleusLysosomeStain.png",
+    "expected_answer": "These cells are pretty much dead, we can even start seeing some photobleaching."
+  },
+  {
+    "query": "Do you notice any morphological changes present in these images? If so what types and to what ratio are you able to compare puncta to filamentous networks?",
+    "image_name": "NucleusLysosomeStain.png",
+    "expected_answer": "Filamentous/fragmented morphology change occurring. "
+  },
+  {
+    "query": "These images have two pathways, one showing the basics of staining to certain organelles while others show invasion. What is being invaded into these cells? Which organelles are these morphology changes occurring in these images?",
+    "image_name": "NucleusLysosomeStain.png",
+    "expected_answer": "Virus"
+  },
+  {
+    "query": "How many of the cells in these images are undergoing cell death? Give me a number.",
+    "image_name": "NucleusLysosomeStain.png",
+    "expected_answer": "4"
+  },
+
+
+  {
+    "query": "What are the fluorescent dyes being used in this image if any? Please specify which organelles are being stained and why?",
+    "image_name": "ERswelling.png",
+    "expected_answer": "GFP (green fluorescent protein) to label the ER and rhodamine protein to label the virus invasion."
+  },
+  {
+    "query": "Do the cells in these images seem healthy? If not, what is the process they could undergo and how would you know?",
+    "image_name": "ERswelling.png",
+    "expected_answer": "Cells are not healthy; they are beginning to bleb and swell. The ER is also beginning to swell. Here, we can see the invasion stays in tact while the cell begins to break down."
+  },
+  {
+    "query": "Do you notice any morphological changes present in these images? If so what types and to what ratio are you able to compare puncta to filamentous networks?",
+    "image_name": "ERswelling.png",
+    "expected_answer": "Yes there are morphology changes, mostly puncta and blebbing."
+  },
+  {
+    "query": "These images have two pathways, one showing the basics of staining to certain organelles while others show invasion. What is being invaded into these cells? Which organelles are these morphology changes occurring in these images?",
+    "image_name": "ERswelling.png",
+    "expected_answer": "Apoptosis is being undergone with these cells and viruses are being invaded."
+  },
+  {
+    "query": "How many of the cells in these images are undergoing cell death? Give me a number.",
+    "image_name": "ERswelling.png",
+    "expected_answer": "~7"
+  },
+
+
+  {
+    "query": "What are the fluorescent dyes being used in this image if any? Please specify which organelles are being stained and why?",
+    "image_name": "NucleusandMitoStain.png",
+    "expected_answer": "Blue fluorescence is Hoechst 33258 is staining the nucleus.  Alexa 594 red fluorescence is staining the mitochondria in the cell."
+  },
+  {
+    "query": "Do the cells in these images seem healthy? If not, what is the process they could undergo and how would you know?",
+    "image_name": "NucleusandMitoStain.png",
+    "expected_answer": "These cells healthy and showing nicely stained mitochondria throughout the cytoplasm, we can see this due to their elongated shapes."
+  },
+  {
+    "query": "Do you notice any morphological changes present in these images? If so what types and to what ratio are you able to compare puncta to filamentous networks?",
+    "image_name": "NucleusandMitoStain.png",
+    "expected_answer": "This image does not show any outstanding morphological changes to the organelles present in the cell. The cell seems healthy and properly stained."
+  },
+  {
+    "query": "These images have two pathways, one showing the basics of staining to certain organelles while others show invasion. What is being invaded into these cells? Which organelles are these morphology changes occurring in these images?",
+    "image_name": "NucleusandMitoStain.png",
+    "expected_answer": "No invasion in these cells."
+  },
+  {
+    "query": "How many of the cells in these images are undergoing cell death? Give me a number.",
+    "image_name": "NucleusandMitoStain.png",
+    "expected_answer": "0"
+  },
+
+
+  {
+    "query": "What are the fluorescent dyes being used in this image if any? Please specify which organelles are being stained and why?",
+    "image_name": "VirusInvasion.png",
+    "expected_answer": "Generic DAPI, GFP, and rhodamine dyes. The specific organelles are hard to decipher here due to the advancement of apoptosis occurring here."
+  },
+  {
+    "query": "Do the cells in these images seem healthy? If not, what is the process they could undergo and how would you know?",
+    "image_name": "VirusInvasion.png",
+    "expected_answer": "These cells are pretty much dead, we can even start seeing some photobleaching."
+  },
+  {
+    "query": "Do you notice any morphological changes present in these images? If so what types and to what ratio are you able to compare puncta to filamentous networks?",
+    "image_name": "VirusInvasion.png",
+    "expected_answer": "Filamentous/fragmented morphology change occurring."
+  },
+  {
+    "query": "These images have two pathways, one showing the basics of staining to certain organelles while others show invasion. What is being invaded into these cells? Which organelles are these morphology changes occurring in these images?",
+    "image_name": "VirusInvasion.png",
+    "expected_answer": "Virus"
+  },
+  {
+    "query": "How many of the cells in these images are undergoing cell death? Give me a number.",
+    "image_name": "VirusInvasion.png",
+    "expected_answer": "4"
+  }
+]

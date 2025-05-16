@@ -1,0 +1,702 @@
+[
+    {
+        "fact": "There are a plethora of components of a cell, but in particular, we are interested in the cell membranes.",
+        "tags": []
+      },
+      {
+        "fact": "Cell membranes have the ability to separate the inside of an organelle to the outside of an organelle.",
+        "tags": []
+      },
+      {
+        "fact": "An organelle is a subcellular structure that has one or more specific jobs to perform in the cell.",
+        "tags": []
+      },
+      {
+        "fact": "The types of organelles that are in a cell are the nucleus, mitrochondria, endoplasmic reticulum, golgi apparatus, lysosomes, ribosomes, vauoles, cytoskeleton, cell membrane.",
+        "tags": [
+          "organelle",
+          "ribosome",
+          "endoplasmic reticulum",
+          "nucleus",
+          "lysosome",
+          "golgi"
+        ]
+      },
+      {
+        "fact": "The cytoplasm is the gelatinous liquid that fills the inside of a cell.",
+        "tags": [
+          "organelle",
+          "cytoplasm"
+        ]
+      },
+      {
+        "fact": "The mitochondria are membrane-bound organelles that generate energy needed to power the cell's biological reactions, storing it as ATP.",
+        "tags": [
+          "organelle",
+          "mitochondria"
+        ]
+      },
+      {
+        "fact": "Mitochondria look like small, oval, or rod-shaped structures with a double membrane, an inner membrane with folds called cristae, and a fluid-filled space called the matrix.",
+        "tags": [
+          "organelle",
+          "morphology",
+          "mitochondria"
+        ]
+      },
+      {
+        "fact": "The function of the mitochondria is to generate energy needed to power the cell's biological reactions.",
+        "tags": [
+          "organelle",
+          "mitochondria"
+        ]
+      },
+      {
+        "fact": "DNA is a molecule that contains the genetic code for building and maintaining an organism.",
+        "tags": []
+      },
+      {
+        "fact": "Ribosome is a complex, molecular machine. Protein factories.",
+        "tags": [
+          "organelle",
+          "ribosome"
+        ]
+      },
+      {
+        "fact": "In a cell ribosomes look like a composition of ribonucleic acid (RNA) and proteins, and consist of two subunits.",
+        "tags": [
+          "organelle",
+          "ribosome"
+        ]
+      },
+      {
+        "fact": "The function of the ribosome is to bind to mRNA molecules and read the genetic code carried within. They facilitate the process of translation, where amino acids, carried by transfer RNA (tRNA), are linked together in the order specificed by the mRNA. Results in the formation of polypeptide chains.",
+        "tags": [
+          "organelle",
+          "ribosome"
+        ]
+      },
+      {
+        "fact": "A prokaryotic cell is a single-celled organism whose cell lacks a nucleus and other organelles",
+        "tags": [
+          "organelle",
+          "nucleus"
+        ]
+      },
+      {
+        "fact": "A eukaryotic cell is a cell type characterized by having a membrane-bound nucleus and other membrane-bound organelles, which are specialized cellular compartments that carry out specific functions",
+        "tags": [
+          "organelle",
+          "nucleus"
+        ]
+      },
+      {
+        "fact": "Prokaryotic cells are simpler, smaller, and lack a nucleus and membrane-bound organelles, while eukaryotic cells are more complex, larger, and possess a nucleus and membrane-bound organelles",
+        "tags": [
+          "organelle",
+          "nucleus"
+        ]
+      },
+      {
+        "fact": "The nucleus is the structure in a cell that contains the chromosomes",
+        "tags": [
+          "organelle",
+          "nucleus"
+        ]
+      },
+      {
+        "fact": "In a cell the nucleus appears as a distinct, membrane-bound organelle, typically spherical or oval, containing the cell's genetic material (DNA) and a prominent nucleolus, a darker region involved in ribosome synthesis",
+        "tags": [
+          "organelle",
+          "nucleus",
+          "ribosome"
+        ]
+      },
+      {
+        "fact": "A lysosome is a membrane-bound cell organelle that contains digestive enzymes",
+        "tags": [
+          "organelle",
+          "lysosome"
+        ]
+      },
+      {
+        "fact": "Lysosomes are cellular organelles that act as the cell's \"recycling center\" and \"garbage disposal,\" breaking down waste materials, cellular debris, and foreign substances using hydrolytic enzymes",
+        "tags": [
+          "organelle",
+          "lysosome"
+        ]
+      },
+      {
+        "fact": "Lysosomes are small, spherical, membrane-bound organelles found in animal cells that contain digestive enzymes, appearing as dense, spherical vacuoles or vesicles",
+        "tags": [
+          "organelle",
+          "vacuole",
+          "lysosome"
+        ]
+      },
+      {
+        "fact": "The endoplasmic reticulum (ER) is a network of membrane-enclosed tubules and sacs within a cell's cytoplasm",
+        "tags": [
+          "organelle",
+          "endoplasmic reticulum",
+          "cytoplasm"
+        ]
+      },
+      {
+        "fact": "The endoplasmic reticulum (ER) appears as a network of interconnected membranes, forming flattened sacs (cisternae) and tubules, extending throughout the cytoplasm, and can be either rough (with ribosomes) or smooth (without ribosomes)",
+        "tags": [
+          "organelle",
+          "endoplasmic reticulum",
+          "ribosome",
+          "cytoplasm"
+        ]
+      },
+      {
+        "fact": "The endoplasmic reticulum (ER), a network of membranes within cells, plays a crucial role in protein synthesis, folding, modification, and transport, as well as lipid and carbohydrate metabolism, and calcium storage",
+        "tags": [
+          "organelle",
+          "endoplasmic reticulum"
+        ]
+      },
+      {
+        "fact": "The Golgi apparatus, also known as the Golgi complex or Golgi body, is a cell organelle found in eukaryotic cells that processes and packages proteins and lipids, often likened to a cell's \"post office\" or distribution center",
+        "tags": [
+          "organelle",
+          "golgi"
+        ]
+      },
+      {
+        "fact": "The golgi appartus looks like a series of flattened, stacked, membrane-enclosed sacs called cisternae, often described as looking like a stack of pancakes or flattened discs, and is located near the endoplasmic reticulum and nucleus",
+        "tags": [
+          "organelle",
+          "nucleus",
+          "endoplasmic reticulum",
+          "golgi"
+        ]
+      },
+      {
+        "fact": "The function of the golgi apparatus is to process and package proteins and lipids, especially those destined for secretion or delivery to other cellular location",
+        "tags": [
+          "organelle",
+          "golgi"
+        ]
+      },
+      {
+        "fact": "Cell morphology is the term used to desribe the description of the shape of a cell.",
+        "tags": [
+          "morphology"
+        ]
+      },
+      {
+        "fact": "Cells can have numerous shapes: Cocci, Bacilli, Vibrio, Spirillia, Spirochete, Rod, Oval, Spherical, Filamentous, Puncta",
+        "tags": [
+          "morphology"
+        ]
+      },
+      {
+        "fact": "A typical animal cell is roughly 10-20 micrometers in diameter, while prokaryotic cells (like bacteria) are smaller, around 0.1 to 5.0",
+        "tags": [
+          "invasion"
+        ]
+      },
+      {
+        "fact": "The surface features of a cell are plasma membrane which acts as a barrier and interface with the external environment.",
+        "tags": []
+      },
+      {
+        "fact": "A damaged cell can feature reversible and irreversible injuries.",
+        "tags": [
+          "cell_health"
+        ]
+      },
+      {
+        "fact": "The features of a reversible damaged cell include cell swelling, fatty change, blebbing, distortion of microvilli, loosening of intercellular attachments, mitochondrial changes, dilation of the endoplasmic reticulum.",
+        "tags": [
+          "organelle",
+          "cell_death",
+          "endoplasmic reticulum",
+          "cell_health",
+          "mitochondria"
+        ]
+      },
+      {
+        "fact": "The features of an irreversible damaged cell are: rupture of the plasma membrane, organelle damage, DNA damage, autolysis, necrosis, apoptosis",
+        "tags": [
+          "cell_death",
+          "cell_health"
+        ]
+      },
+      {
+        "fact": "The nuclear envelope is composed of two lipid bilayers, the inner and outer nuclear membranes, with a space between them called the perinuclear space",
+        "tags": []
+      },
+      {
+        "fact": "The nuclear envelope appears as two concentric lipid bilayer membranes separated by an intermembrane space of about 20-40 nm. The outer membrane is continuous in many places with the rough endoplasmic reticulum. Like the rough ER the outer membrane of the nuclear envelope is dotted with ribosomes",
+        "tags": [
+          "organelle",
+          "endoplasmic reticulum",
+          "ribosome"
+        ]
+      },
+      {
+        "fact": "Fluorescent microscopy is a technique that uses a microscope to irradiate a specimen with a specific wavelength of light (excitation light), and then detects the emitted fluorescent light (emission light) after it has been re-emitted by fluorophores in the sample",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "Fluorescent microscopy can help analyze an image by enabling the visualization of specific cellular structures and processes through the use of fluorophores (dyes that emit light when excited), allowing for detailed observation and quantification of biological phenomena",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "During apoptosis cells show a reduced fluorescence compared to healthy cells.",
+        "tags": [
+          "cell_death",
+          "cell_health"
+        ]
+      },
+      {
+        "fact": "Fluorescent images can use a variety of dyes or fluorophores such as organic dyes, biological fluorophores, and quantum dots.",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "Examples of organic dyes include: cyanines, rhodamines, fluoresceins, BODIPY dyes, and coumarin dyes.",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "The most commonly used dyes for immunofluorescence labeling are fluoroscein isothiocyanate (FITC), phycoerythrin (PE) and AlexaFluor series dyes.",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "Examples of biological fluorophores used are: fluorescein isothiocyanate (FITC), cyanine dyes, DAPI, Alexa Fluor",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "GFP are green fluorescent proteins serve as fluorescent protein labels.",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "Applications to fluorescent dyes are fluorescence microscopy, flow cytometry, immunofluorescence, biochemical assays, cell viability assays.",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "On a microscope image a green color indicates fluoroscein that is often used to stain microtubules or actin filaments.",
+        "tags": []
+      },
+      {
+        "fact": "On a microscope image a red color indicates rhodamine that is often used to stain mitochondria or lysosomes.",
+        "tags": [
+          "organelle",
+          "lysosome",
+          "fluorescence",
+          "mitochondria"
+        ]
+      },
+      {
+        "fact": "On a microscope image a blue color indicates the DAPI or Hoechst fluorophore and binds to DNA.",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "A cell, under cell death, can exhibit shrinkage, blebbing (membrane protrusions), chromatin condensation, and nuclear fragmentation. Leads to the formation of apoptotic bodies.",
+        "tags": [
+          "cell_death",
+          "cell_health"
+        ]
+      },
+      {
+        "fact": "Stages of apoptosis include cell shrinkage, nuclear fragmentation, formation of apoptotic bodies, and phagocytosis.",
+        "tags": [
+          "cell_death"
+        ]
+      },
+      {
+        "fact": "Apoptosis is the main type of cell death.",
+        "tags": [
+          "cell_death"
+        ]
+      },
+      {
+        "fact": "Necrosis is another type of cell death which is uncontrolled cell death.",
+        "tags": [
+          "cell_death"
+        ]
+      },
+      {
+        "fact": "The morphological changes that are present in apoptosis include cell blebbing, loss of adhesion and cellular volume, chromatin condensation and nuclear fragmentation, cytoskeletal rearrangement, phosphatidylserine inversion, release of mitochondrial proteins, and caspase cleavage.",
+        "tags": [
+          "organelle",
+          "cell_death",
+          "cell_health",
+          "mitochondria"
+        ]
+      },
+      {
+        "fact": "Morphology changes present during vial invasion can include cell rounding, fusion to form syncytia, and the appearance of inclusion bodies.",
+        "tags": [
+          "invasion",
+          "morphology"
+        ]
+      },
+      {
+        "fact": "The first membrane affected during apoptosis is the mitochondrial outer membrane.",
+        "tags": [
+          "organelle",
+          "cell_death",
+          "mitochondria"
+        ]
+      },
+      {
+        "fact": "The cell fluoresces its particular color per organelle due to the use of fluorescent dyes that target and accumulate in specific dyes.",
+        "tags": [
+          "fluorescence"
+        ]
+      },
+      {
+        "fact": "Filamentous networks can occur in cytoskeleton, cell cortex, nuclear lamina, in vascular systems and neurons.",
+        "tags": [
+          "morphology"
+        ]
+      },
+      {
+        "fact": "Viruses and bacteria invade cells by fusing either with the plasma membrane or with the endosomal membrane following endocytosis. They can also utilize specialized proteins to facilitate entry.",
+        "tags": [
+          "invasion"
+        ]
+      },
+      {
+        "fact": "Cells undergo cell division for growth, tissue repair, and replacement of old or damaged cells. Cell death is related to this as it removes cells that are no longer needed or are damaged, ensuring proper tissue function and preventing potential problems like cancer.",
+        "tags": [
+          "cell_death",
+          "cell_health"
+        ]
+      },
+      {
+        "fact": "Blebbing, in cell death, is described as an irregular bulge in the plasma membrane of a cell. They are balloon-like, spherical protrusions of the plasma membrane. They can eventually detach and take part of the cytoplasm with them.",
+        "tags": [
+          "organelle",
+          "cell_death",
+          "cytoplasm",
+          "cell_health"
+        ]
+      },
+      {
+        "fact": "Membrane blebbing is the formation of irregular bulges in the plasma membrane.",
+        "tags": [
+          "cell_death",
+          "cell_health"
+        ]
+      },
+      {
+        "fact": "Apoptotic bodies are non-uniform subcellular fragments related from apoptotic cells trapping cellular contents such as DNA, fragments of nucleus, and fragmented or intact organelles, the formation of which requires plasma membrane blebbing.",
+        "tags": [
+          "organelle",
+          "cell_death",
+          "organelle_change",
+          "nucleus",
+          "cell_health"
+        ]
+      },
+      {
+        "fact": "Apoptotic cells reorganize their cytoskeletons with fragmentation of the microfilament bundles. This will confer plasticity to the whole cell and promotes volume decrease as well as cell shrinkage.",
+        "tags": [
+          "cell_death"
+        ]
+      },
+      {
+        "fact": "The endoplasmic reticulum has a structure made by tubules dynamically moving and fusing with each other. It will become enlarged and swollen in apoptotic cells. Dense vacuoles can also occur.",
+        "tags": [
+          "organelle",
+          "organelle_change",
+          "endoplasmic reticulum",
+          "vacuole"
+        ]
+      },
+      {
+        "fact": "During apoptosis the mitochondria becomes fragmented, forming aggregates and more packed masses in the cytoplasm. They can be seen as smaller, swollen, and vacuolated. Permeabilization of mitochondrial membranes would be a decisive step in apoptosis.",
+        "tags": [
+          "organelle",
+          "cell_death",
+          "organelle_change",
+          "mitochondria",
+          "cytoplasm"
+        ]
+      },
+      {
+        "fact": "During apoptosis the lysosomes enzymatic content, such as proteases, play a crucial degradative function. Key activation step for lysosome function is represented by the destabilization of lysosomal membranes to allow the release of lysosomal content into the cytosol.",
+        "tags": [
+          "organelle",
+          "cell_death",
+          "lysosome"
+        ]
+      },
+      {
+        "fact": "Cytoplasmic organelles undertake largely stereotypic relocation and/or degradation during apoptosis.",
+        "tags": [
+          "organelle",
+          "organelle_change",
+          "cell_death",
+          "cytoplasm"
+        ]
+      },
+    {
+      "fact": "There are a plethora of components of a cell, but in particular, we are interested in the cell membranes.",
+      "tags": []
+    },
+    {
+      "fact": "Cell membranes have the ability to separate the inside of an organelle to the outside of an organelle.",
+      "tags": []
+    },
+    {
+      "fact": "An organelle is a subcellular structure that has one or more specific jobs to perform in the cell.",
+      "tags": []
+    },
+    {
+      "fact": "The types of organelles that are in a cell are the nucleus, mitrochondria, endoplasmic reticulum, golgi apparatus, lysosomes, ribosomes, vauoles, cytoskeleton, cell membrane.",
+      "tags": [
+        "organelle",
+        "lysosome",
+        "nucleus",
+        "ER",
+        "golgi"
+      ]
+    },
+    {
+      "fact": "The cytoplasm is the gelatinous liquid that fills the inside of a cell.",
+      "tags": []
+    },
+    {
+      "fact": "The mitochondria are membrane-bound organelles that generate energy needed to power the cell's biological reactions, storing it as ATP.",
+      "tags": [
+        "organelle",
+        "mitochondria"
+      ]
+    },
+    {
+      "fact": "Mitochondria look like small, oval, or rod-shaped structures with a double membrane, an inner membrane with folds called cristae, and a fluid-filled space called the matrix.",
+      "tags": [
+        "organelle",
+        "mitochondria"
+      ]
+    },
+    {
+      "fact": "The function of the mitochondria is to generate energy needed to power the cell's biological reactions.",
+      "tags": [
+        "organelle",
+        "mitochondria"
+      ]
+    },
+    {
+      "fact": "DNA is a molecule that contains the genetic code for building and maintaining an organism.",
+      "tags": []
+    },
+    {
+      "fact": "Ribosome is a complex, molecular machine. Protein factories.",
+      "tags": []
+    },
+    {
+      "fact": "DAPI and Hoechst dyes fluoresce blue and are commonly used to stain the cell nucleus by binding to DNA.",
+      "tags": [
+        "dye",
+        "nucleus"
+      ]
+    },
+    {
+      "fact": "GFP (green fluorescent protein) fluoresces green and is often used to label the endoplasmic reticulum and cytoplasmic components.",
+      "tags": [
+        "dye",
+        "ER",
+        "cytoplasm"
+      ]
+    },
+    {
+      "fact": "Rhodamine fluoresces red and is used to stain mitochondria and lysosomes due to its ability to accumulate in acidic environments.",
+      "tags": [
+        "dye",
+        "mitochondria",
+        "lysosome"
+      ]
+    },
+    {
+      "fact": "Alexa Fluor 594 is a red dye used to label mitochondria and track cytoskeletal morphology.",
+      "tags": [
+        "dye",
+        "mitochondria"
+      ]
+    },
+    {
+      "fact": "Puncta appear as bright, small round dots indicating concentrated proteins or organelle clusters.",
+      "tags": [
+        "morphology",
+        "puncta"
+      ]
+    },
+    {
+      "fact": "Filamentous structures indicate extended networks such as mitochondria or the cytoskeleton.",
+      "tags": [
+        "morphology",
+        "filamentous"
+      ]
+    },
+    {
+      "fact": "Blebbing is a key morphological marker of early apoptosis, where the membrane forms rounded protrusions.",
+      "tags": [
+        "apoptosis",
+        "morphology"
+      ]
+    },
+    {
+      "fact": "Apoptotic cells often show condensed chromatin, cell shrinkage, nuclear fragmentation, and reduced fluorescence due to loss of membrane integrity.",
+      "tags": [
+        "apoptosis"
+      ]
+    },
+    {
+      "fact": "Swollen or fragmented mitochondria are a hallmark of advanced apoptosis.",
+      "tags": [
+        "apoptosis",
+        "mitochondria"
+      ]
+    },
+    {
+      "fact": "Fluorescence photobleaching may occur in damaged or dead cells, causing a loss of visible signal.",
+      "tags": [
+        "apoptosis",
+        "photobleaching"
+      ]
+    },
+    {
+      "fact": "You can estimate the number of dying cells by counting those with blebbing or disrupted fluorescence.",
+      "tags": [
+        "quantification",
+        "cell death"
+      ]
+    },
+    {
+      "fact": "Viruses can invade host cells by binding to surface receptors and entering via endocytosis or membrane fusion.",
+      "tags": [
+        "virus",
+        "invasion"
+      ]
+    },
+    {
+      "fact": "In infected cells, morphological signs like cytoplasmic swelling, blebbing, or syncytia formation can be observed.",
+      "tags": [
+        "virus",
+        "morphology"
+      ]
+    },
+    {
+      "fact": "Viral invasion can cause disruption of organelle structure, including mitochondrial swelling and ER fragmentation.",
+      "tags": [
+        "virus",
+        "mitochondria",
+        "ER"
+      ]
+    },
+    {
+      "fact": "Healthy cells typically show intact nuclei, elongated mitochondria, and consistent fluorescence across organelles.",
+      "tags": [
+        "healthy",
+        "morphology"
+      ]
+    },
+    {
+      "fact": "A lack of morphological abnormalities or signal loss generally indicates cellular health.",
+      "tags": [
+        "healthy"
+      ]
+    },
+    {
+        "fact": "GFP is a green fluorescent protein often used to label intracellular structures like the endoplasmic reticulum in live-cell imaging.",
+        "tags": ["gfp", "fluorescent_dye", "er", "microscopy"]
+    },
+    {
+        "fact": "Rhodamine is a red-emitting fluorophore that preferentially localizes to mitochondria or can be conjugated to track viral proteins in invasion studies.",
+        "tags": ["rhodamine", "fluorescent_dye", "virus", "mitochondria"]
+    },
+    {
+        "fact": "During early apoptosis, cells may exhibit membrane blebbing and organelle swelling, especially in the ER.",
+        "tags": ["apoptosis", "blebbing", "er", "cell_health"]
+    },
+    {
+        "fact": "Morphological changes in unhealthy cells often include puncta formation and ER dilation visible under fluorescent microscopy.",
+        "tags": ["puncta", "blebbing", "er", "morphology"]
+    },
+    {
+        "fact": "Viruses can enter cells through endocytosis and trigger stress responses such as ER swelling and blebbing.",
+        "tags": ["virus", "invasion", "er", "apoptosis"]
+    },
+    {
+        "fact": "Hoechst 33258 is a blue-emitting dye that binds DNA and is commonly used to stain cell nuclei.",
+        "tags": ["hoechst", "nucleus", "fluorescent_dye", "dna"]
+    },
+    {
+        "fact": "Alexa Fluor 594 is a red-emitting fluorophore that can be used to stain mitochondria in fluorescence microscopy.",
+        "tags": ["alexa594", "mitochondria", "fluorescent_dye", "cytoplasm"]
+    },
+    {
+        "fact": "Healthy mitochondria typically appear elongated and evenly distributed in the cytoplasm.",
+        "tags": ["mitochondria", "health", "morphology", "cytoplasm"]
+    },
+    {
+        "fact": "Cells with evenly stained, elongated mitochondria and intact nuclei are typically in a healthy state.",
+        "tags": ["cell_health", "mitochondria", "nucleus", "staining"]
+    },
+    {
+        "fact": "DAPI is a blue-fluorescent stain that binds strongly to DNA and highlights nuclei in fixed cell imaging.",
+        "tags": ["dapi", "nucleus", "fluorescent_dye"]
+    },
+    {
+        "fact": "Apoptosis often results in fragmented or blebbed organelles and nuclear condensation.",
+        "tags": ["apoptosis", "morphology", "nucleus", "blebbing"]
+    },
+    {
+        "fact": "Viral infection in cells may lead to cytoplasmic rearrangement and changes in nuclear morphology.",
+        "tags": ["virus", "invasion", "morphology", "apoptosis"]
+    },
+    {
+        "fact": "Advanced apoptosis may cause a decrease in fluorescence intensity, especially in the nucleus or ER.",
+        "tags": ["apoptosis", "fluorescence", "photobleaching", "nucleus"]
+    },
+    {
+        "fact": "Alexa488 is a green fluorescent dye that can be conjugated to label lysosomes in cell imaging.",
+        "tags": ["alexa488", "lysosomes", "fluorescent_dye"]
+    },
+    {
+        "fact": "Apoptosis may lead to fragmentation of lysosomes and formation of cytoplasmic puncta.",
+        "tags": ["apoptosis", "lysosomes", "fragmentation", "puncta"]
+    },
+    {
+        "fact": "Morphological changes in lysosomes during apoptosis include vacuolization and distribution changes.",
+        "tags": ["lysosomes", "morphology", "apoptosis", "fluorescent_dye"]
+    },
+    {
+        "fact": "Virus-induced apoptosis is marked by changes in both the nuclear and lysosomal structures.",
+        "tags": ["virus", "lysosomes", "nucleus", "apoptosis"]
+    },
+
+    {
+        "fact": "Estimating the number of dying cells typically involves counting blebbed, fragmented, or intensely stained nuclei under fluorescent microscopy.",
+        "tags": ["apoptosis", "cell_count", "morphology", "fluorescent_dye"]
+    },
+    {
+        "fact": "HeLa cells undergoing apoptosis show prominent morphological signs such as nuclear fragmentation, blebbing, and organelle distortion.",
+        "tags": ["hela", "apoptosis", "morphology", "nucleus", "lysosomes"]
+    }
+  ]

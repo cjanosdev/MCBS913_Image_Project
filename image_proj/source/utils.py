@@ -6,6 +6,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import csv
 import re
+import numpy as np
+import textwrap
+
 
 class Utils:
 
@@ -265,26 +268,174 @@ class Utils:
 
     def plot_experiment_scores(self, csv_path="logs/experiment_results.csv"):
         df = pd.read_csv(csv_path)
-
-         # ✅ Convert score column to numeric explicitly
         df["Score"] = pd.to_numeric(df["Score"], errors="coerce")
-        # ✅ Prepare output path for PNG
-        png_path = os.path.splitext(csv_path)[0] + ".png"
+        df["Preprocessing"] = df["Preprocessing"].str.strip().str.lower()
+        df["Prompt Mode"] = df["Prompt Mode"].str.strip().str.lower()
 
-        # Optional: Shorten long questions for cleaner axis labels
-        df["ShortQuery"] = df["Query"].apply(lambda q: q if len(q) < 60 else q[:57] + "...")
+        preprocessings = ["default", "none"]  # Focus on default vs none
+        prompt_modes = ["dynamic_rag", "control"]  # Compare RAG vs control
+        queries = df["Query"].unique()
+        images = df["Image"].unique()
+
+        # Hardcoded colors for images
+        custom_colors = ["#fdbb34", "#55fbcf", "#fb5581", "#81f655", "#849bff", "#f0ff1f"]
+        # Hardcoded lighter colors for 'none' preprocessing
+        lighter_colors = ["#ffcc80", "#a7e0db", "#ff85a1", "#9df398", "#a0c5ff", "#f1f94d"]
+
+        # Create dictionaries for default and none colors
+        image_colors = {img: color for img, color in zip(images, custom_colors)}
+        light_image_colors = {img: color for img, color in zip(images, lighter_colors)}
+
+        # Grouped mean scores
+        grouped = df.groupby(["Query", "Image", "Preprocessing", "Prompt Mode"])["Score"].mean().reset_index()
+
+        # Create output folder
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        output_folder = f"output_{timestamp}"
+        os.makedirs(output_folder, exist_ok=True)
+
+        # Plot one figure for both preprocessing methods (default vs none)
+        fig, axes = plt.subplots(2, 1, figsize=(26, 19), sharey=False)
+        if not isinstance(axes, (list, np.ndarray)):
+            axes = [axes]
+
+        for i, mode in enumerate(prompt_modes):
+            ax = axes[i]
+            subset = grouped[grouped["Prompt Mode"] == mode]
+
+            bar_width = 0.6  # Bar width for each group of images
+            spacing = 0.1 # Add some space between bars
+            tick_positions = []
+            x_labels = []
+            pos = 0
+
+            for q in queries:
+                n_images = len(images)
+                group_width = (2 * bar_width + spacing) * n_images
+                # For each query, we will plot 10 bars: 5 for 'default' and 5 for 'none'
+                for j, img in enumerate(images):
+                    # Extract scores for 'default' and 'none' preprocessing
+                    default_score = subset[(subset["Query"] == q) & 
+                                        (subset["Image"] == img) & 
+                                        (subset["Preprocessing"] == "default")]["Score"].values
+                    none_score = subset[(subset["Query"] == q) & 
+                                        (subset["Image"] == img) & 
+                                        (subset["Preprocessing"] == "none")]["Score"].values
+                    base = pos + j * (2 * bar_width + spacing)
+
+                    # If scores are available, plot them
+                    if default_score.size > 0:
+                        label = f"{img} -> default"  # Append 'default' to the image name for the label
+                        ax.bar(base, default_score[0], width=bar_width, 
+                            color=image_colors.get(img, "gray"), label=label if pos == 0 else "")
+                        ax.text(base, default_score[0] + 0.1, f"{default_score[0]:.1f}", ha='center', fontsize=14)
+                    if none_score.size > 0:
+                        label = f"{img} -> none"  # Append 'none' to the image name for the label
+                        ax.bar( base + bar_width + spacing, none_score[0], width=bar_width, 
+                            color=light_image_colors.get(img, "lightgray"), label=label if pos == 0 else "")
+                        ax.text(base + bar_width + spacing, none_score[0] + 0.1, f"{none_score[0]:.1f}", ha='center', fontsize=14)
+
+                # Position and label for each query
+                center = pos + (group_width - bar_width - spacing) / 2
+                # center = pos + (len(images) * 2 - 1) * bar_width / 2
+                wrapped_q = "\n".join(textwrap.wrap(q.strip(), width=25))
+                tick_positions.append(center)
+                x_labels.append(wrapped_q)
+                pos += group_width + 1.0 
+                # pos += (len(images) * 2) * (bar_width + spacing) + 0.9
+
+            ax.set_title(f"{mode.upper()} Prompt", fontsize=22)
+            ax.set_xticks(tick_positions)
+            ax.set_xticklabels(x_labels, rotation=0, ha="center", fontsize=15)
+            ax.set_ylabel("Score (out of 5)", fontsize=20)
+            ax.set_ylim(0, 6)
+            ax.legend(title="Image", fontsize=16, bbox_to_anchor=(1.01, 1), loc='upper left')
+
+        fig.suptitle("Default vs None Preprocessing", fontsize=28)
+        plt.tight_layout(rect=[0, 0, 1, 0.99])
+
+        # Save figure
+        output_file = os.path.join(output_folder, f"evaluation_{output_folder}_chart.png")
+        plt.savefig(output_file, dpi=300)
+        plt.close(fig)
+        print(f"✅ Saved: {output_file}")
 
 
-        # Plot as bar chart
-        plt.figure(figsize=(12, 6))
-        plt.bar(df["ShortQuery"], df["Score"], color='skyblue')
-        plt.title("LLM Correctness Score by Question")
-        plt.xlabel("Question")
-        plt.ylabel("Score (out of 5)")
-        plt.ylim(0, 5.5)
-        plt.xticks(rotation=45, ha='right')
-        plt.tight_layout()
+    # def plot_experiment_scores(self, csv_path="logs/experiment_results.csv"):
+    #     df = pd.read_csv(csv_path)
+    #     df["Score"] = pd.to_numeric(df["Score"], errors="coerce")
+    #     df["Preprocessing"] = df["Preprocessing"].str.strip().str.lower()
+    #     df["Prompt Mode"] = df["Prompt Mode"].str.strip().str.lower()
 
-         # ✅ Save plot to same directory as CSV
-        plt.savefig(png_path)
-        print(f"📁 Plot saved to: {png_path}")
+    #     preprocessings = ["default", "blur", "canny", "segmented", "threshold", "none"]
+    #     prompt_modes = ["dynamic_rag", "control"]
+    #     queries = df["Query"].unique()
+    #     images = df["Image"].unique()
+
+    #     # Custom colors for images
+    #     custom_colors = ["#fdbb34", "#55fbcf", "#fb5581", "#81f655", "#849bff", "#f0ff1f"]
+    #     image_colors = {img: color for img, color in zip(images, custom_colors)}
+
+    #     # Grouped mean scores
+    #     grouped = df.groupby(["Query", "Image", "Preprocessing", "Prompt Mode"])["Score"].mean().reset_index()
+
+    #     # Create output folder
+    #     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    #     output_folder = f"output_{timestamp}"
+    #     os.makedirs(output_folder, exist_ok=True)
+
+    #     # Plot one figure per preprocessing method
+    #     for prep in preprocessings:
+    #         fig, axes = plt.subplots(1, 2, figsize=(24, 6), sharey=True)
+    #         if not isinstance(axes, (list, np.ndarray)):
+    #             axes = [axes]
+
+    #         for i, mode in enumerate(prompt_modes):
+    #             ax = axes[i]
+    #             subset = grouped[
+    #                 (grouped["Prompt Mode"] == mode) &
+    #                 (grouped["Preprocessing"] == prep)
+    #             ]
+
+    #             bar_width = 0.2
+    #             tick_positions = []
+    #             x_labels = []
+    #             pos = 0
+
+    #             for q in queries:
+    #                 for j, img in enumerate(images):
+    #                     match = subset[
+    #                         (subset["Query"] == q) &
+    #                         (subset["Image"] == img)
+    #                     ]
+    #                     score = match["Score"].values[0] if not match.empty else 0
+    #                     x = pos + j * bar_width
+    #                     ax.bar(
+    #                         x, score,
+    #                         width=bar_width,
+    #                         color=image_colors.get(img, "gray"),
+    #                         label=img if pos == 0 else ""
+    #                     )
+    #                     ax.text(x, score + 0.1, f"{score:.1f}", ha='center', fontsize=8)
+
+    #                 center = pos + ((len(images) - 1) * bar_width) / 2
+    #                 wrapped_q = "\n".join(textwrap.wrap(q.strip(), width=25))
+    #                 tick_positions.append(center)
+    #                 x_labels.append(wrapped_q)
+    #                 pos += bar_width * len(images) + 0.4
+
+    #             ax.set_title(f"{mode.upper()} Prompt", fontsize=14)
+    #             ax.set_xticks(tick_positions)
+    #             ax.set_xticklabels(x_labels, rotation=0, ha="center", fontsize=8)
+    #             ax.set_ylabel("Score (out of 5)")
+    #             ax.set_ylim(0, 6)
+    #             ax.legend(title="Image", fontsize=8)
+
+    #         fig.suptitle(f"{prep.capitalize()} Preprocessing", fontsize=18)
+    #         plt.tight_layout(rect=[0, 0, 1, 0.95])
+
+    #         # Save figure
+    #         output_file = os.path.join(output_folder, f"{prep}_grouped.png")
+    #         plt.savefig(output_file, dpi=300)
+    #         plt.close(fig)
+    #         print(f"✅ Saved: {output_file}")
